@@ -1,9 +1,15 @@
-def gcd(a: int, b: int) -> int:
-    """Compute the greatest common divisor using Euclid's algorithm."""
+def gcd_iterative(a: int, b: int) -> int:
+    """ITERATIVELY Compute the greatest common divisor using Euclid's algorithm."""
     while b:
         a, b = b, a % b
-    return a
+    return a # because gcd(a, 0) == a
 
+def gcd(a: int, b: int) -> int:
+    """RECURSIVELY Compute the greatest common divisor using Euclid's algorithm."""
+    if b == 0:
+        return a # because gcd(a, 0) == a
+
+    return gcd(b, a % b)
 
 def validate_input(a: int, b: int) -> tuple[bool, str]:
     if a < 0 or b < 0:
