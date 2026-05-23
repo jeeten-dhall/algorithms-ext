@@ -9,7 +9,8 @@ from gcd_euclid import gcd, validate_input
         pytest.param(17, 13, 1, id="coprime"),
         pytest.param(7, 7, 7, id="same_number"),
         pytest.param(18, 0, 18, id="with_zero"),
-        pytest.param(100, 10, 10, id="common_case_2")
+        pytest.param(100, 10, 10, id="common_case_2"),
+        pytest.param(55, 34, 1, id="fibonacci_worst_case")
     ]
 )
 def test_gcd(a, b, expected):
