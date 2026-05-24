@@ -1,10 +1,10 @@
-def gcd_iterative(a: int, b: int) -> int:
+def gcd(a: int, b: int) -> int:
     """ITERATIVELY Compute the greatest common divisor using Euclid's algorithm."""
     while b:
         a, b = b, a % b
     return a # because gcd(a, 0) == a
 
-def gcd(a: int, b: int) -> int:
+def gcd_recursive(a: int, b: int) -> int:
     """RECURSIVELY Compute the greatest common divisor using Euclid's algorithm."""
     if b == 0:
         return a # because gcd(a, 0) == a
