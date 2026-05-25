@@ -25,6 +25,10 @@ def get_factor_map(a: int) -> dict[int, int]:
 
     return factor_map
 
-if __name__ == "__main__":
+def main():
     print(get_factor_map(48))
     print(get_factor_map(77))
+    print(get_factor_map(1))
+
+if __name__ == "__main__":
+    main()
