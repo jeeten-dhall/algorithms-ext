@@ -34,3 +34,7 @@ if __name__ == "__main__":
     a, b = 72, 24
     result = gcd(a, b)
     print(f"GCD of {a} and {b} is: {result}")
+
+    a, b = 1, 1
+    result = gcd(a, b)
+    print(f"GCD of {a} and {b} is: {result}")
